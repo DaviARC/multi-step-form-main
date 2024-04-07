@@ -1,0 +1,26 @@
+.slide-bar-desktop{
+    display: none;
+}
+.slide-bar-mobile{
+    width: 100%;
+}
+.cont-fases{
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.numero-step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--Magnolia);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    color: var(--Magnolia);
+}
+.fase-step, .desc-step{
+    display: none;
+}

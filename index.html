@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <link href="style.css" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Sidebar start -->
+  <section class="container">
+  <div class="slide-bar">
+    <img class="slide-bar-mobile" src="assets/images/bg-sidebar-mobile.svg">
+    <img class="slide-bar-desktop" src="assets/images/bg-sidebar-mobile.svg">
+    <div class="cont-fases">
+      <div class="cont-step">
+        <p class="numero-step">1</p>
+        <p class="fase-step">Step 1</p>
+        <p class="desc-step">Your info</p>
+      </div>
+      <div class="cont-step">
+        <p class="numero-step">1</p>
+        <p class="fase-step">Step 1</p>
+        <p class="desc-step">Your info</p>
+      </div>
+      <div class="cont-step">
+        <p class="numero-step">1</p>
+        <p class="fase-step">Step 1</p>
+        <p class="desc-step">Your info</p>
+      </div>
+    </div>
+  </div> 
+
+  <div class="cont-main">
+    <div class="step1">
+      <h1 class="titulo-main">Personal info</h1>
+      <p class="desc-titulo">Please provide your name, email address, and phone number.</p>
+      
+      <form>
+      <p>Name</p>
+      <input type="text" placeholder="e.g. Stephen King">
+      <p>Email Address</p>
+      <input type="email" placeholder="e.g. stephenking@lorem.com">
+      <p>Phone Number</p>
+      <input type="text" placeholder="e.g. +1 234 567 890">
+      <input class="button-next" type="submit" value="Next Step" data-button>
+      </form>
+    </div>
+
+    <div class="step2">
+      <div class="cont-planos">
+        <div class="cont-plano">
+          <img src="assets/images/icon-arcade.svg">
+          <div class="conta-plano_texto">
+            <p class="titulo-plano">Arcade</p>
+            <p class="preco-plano">$9/mo</p>
+            <p class="plano-desconto"></p>
+          </div>
+        </div>
+        <div class="cont-plano">
+          <img src="assets/images/icon-advanced.svg">
+          <div class="conta-plano_texto">
+            <p class="titulo-plano">Advanced</p>
+            <p class="preco-plano">$12/mo</p>
+            <p class="plano-desconto"></p>
+          </div>
+        </div>
+        <div class="cont-plano">
+          <img src="assets/images/icon-pro.svg">
+          <div class="conta-plano_texto">
+            <p class="titulo-plano">Pro</p>
+            <p class="preco-plano">$15/mo</p>
+            <p class="plano-desconto"></p>
+          </div>
+        </div>
+      </div>
+      <div class="cont-checkbox">
+          <p class="monthly">Monthly</p>
+          <div class="switch">
+            <label class="switch-wrapper">
+              <input class="checkbox" type="checkbox">
+              <span class="switch-button"></span>
+            </label>
+          </div>
+          <p class="yearly">Yearly</p>
+      </div>
+      <div class="cont-buttons">
+        <div class="button-back">Go Back</div>
+        <div class="button-next">Next Step</div>
+      </div>
+    </div>
+    <div class="step3">
+      <h1 class="titulo-main">Pick add-ons</h1>
+      <p class="desc-titulo">Add-ons help enhance your gaming experience.</p>
+
+      <div class="cont-add-ons">
+          <div class="add-ons-box">
+            <div class="flex-ons">
+              <input type="checkbox" class="checkbox-ons">
+              <div class="texto-ons">
+                <p class="titulo-ons">Online service</p>
+                <p class="p-ons">Access to multiplayer games</p>
+              </div>
+            </div>
+            <div class="preco-ons">
+              +$1/mo
+            </div>
+          </div>
+          <div class="add-ons-box">
+            <div class="flex-ons">
+              <input type="checkbox" class="checkbox-ons">
+              <div class="texto-ons">
+                <p class="titulo-ons">Larger storage</p>
+                <p class="p-ons">Extra 1TB of cloud save</p>
+              </div>
+            </div>
+            <div class="preco-ons">
+              +$2/mo
+            </div>
+          </div>
+          <div class="add-ons-box">
+            <div class="flex-ons">
+              <input type="checkbox" class="checkbox-ons">
+              <div class="texto-ons">
+                <p class="titulo-ons">Customizable Profile</p>
+                <p class="p-ons">Custom theme on your profile</p>
+              </div>
+            </div>
+            <div class="preco-ons">
+              +$2/mo
+            </div>
+          </div>
+      </div>
+      <div class="cont-buttons">
+        <div class="button-back">Go Back</div>
+        <div class="button-next">Next Step</div>
+      </div>
+    </div>
+
+    <div class="step4">
+      <h1 class="titulo-main">Finishing up</h1>
+      <p class="desc-titulo">Double-check everything looks OK before confirming.</p>
+    </div>
+    <div class="cont-resultado">
+      <div class="cont-prin-resultado">
+        <div class="texto-resultado">
+          <p class="titulo-resultado">Arcade(Monthly)</p>
+          <p class="p-resultado tracado">Change</p>
+        </div>
+        <div class="preco-resultado-mes">
+          <p>$9/mo</p>
+        </div>
+      </div>
+      <span class="linha"></span>
+      <div class="resultado-flex">
+        <p class="p-resultado">Online service</p>
+        <p class="preco-resultado">$1/mo</p>
+      </div>
+      <div class="resultado-flex">
+        <p class="p-resultado"></p>
+        <p class="preco-resultado"></p>
+      </div>
+    </div>
+    <div class="total-resultado">
+      <p class="total-resultado-p">Total (per month/year)</p>
+      <p class="total-resultado-preco">$1/mo</p>
+    </div>
+    <div class="cont-buttons">
+      <div class="button-back">Go Back</div>
+      <div class="button-next">Next Step</div>
+    </div>
+  </div>
+
+
+
+  <!-- Step 5 start -->
+
+  <!-- Thank you!
+
+  Thanks for confirming your subscription! We hope you have fun 
+  using our platform. If you ever need support, please feel free 
+  to email us at support@loremgaming.com. -->
+
+  <!-- Step 5 end -->
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
