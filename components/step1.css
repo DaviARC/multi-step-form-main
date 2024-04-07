@@ -15,12 +15,50 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 5px;
     border: 1px solid var(--Magnolia);
     border-radius: 50%;
     width: 30px;
     height: 30px;
     color: var(--Magnolia);
 }
-.fase-step, .desc-step{
-    display: none;
+.titulo-main{
+    color: var(--Marine-blue);
+    font-family: 'Ubuntu-Bold';
+    font-size: 20px;
+    margin: 20px 0 15px 0 ;
+}
+.desc-titulo{
+    color: var(--Cool-gray);
+    width: 90%;
+    margin-bottom: 20px;
+}
+.titulo-step-1{
+    font-size: 13px;
+    color: var(--Marine-blue);
+    margin-bottom: 2px;
+}
+.input-step-1{
+    width: 92%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 0.2px solid var(--Cool-gray);
+    margin-bottom: 15px;
+}
+.button-next{
+    position: absolute;
+    bottom: 0;
+    padding: 15px 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+}
+.fundo-mobile{
+    background-color: var(--White);
+    left: 0;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
