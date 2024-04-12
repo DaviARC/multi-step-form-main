@@ -1,5 +1,10 @@
 @import url(components/checkbox.css);
+@import url(components/box.css);
 @import url(components/step1.css);
+@import url(components/step2.css);
+@import url(components/step3.css);
+@import url(components/step4.css);
+@import url(components/agrad.css);
 @import url(reset.css);
 
 @font-face {
@@ -26,6 +31,10 @@
 --Magnolia: hsl(217, 100%, 97%);
 --Alabaster: hsl(231, 100%, 99%);
 --White: hsl(0, 0%, 100%);
+--Bold: 'Ubuntu-Bold';
+--Regular: 'Ubuntu-Regular';
+--Medium: 'Ubuntu-Medium';
+
 }
 
 body, html{
@@ -35,7 +44,7 @@ body, html{
 body{
     position: relative;
     background-color: var(--Magnolia);
-    font-family: 'Ubuntu-Regular';
+    font-family: var(--Regular);
     box-sizing: border-box;
 }  
 .container{
@@ -48,11 +57,71 @@ body{
 }
 .cont-main{
     border-radius: 10px;
-    width: 80%;
+    width: 340px;
     background-color: var(--White);
     margin-top: -75px;
-    padding: 10px 20px;
+    padding: 20px 20px;
+    box-sizing: border-box;
 }
-.step2, .step3, .step4{
+.step2, .step3, .step4, .agradecimento{
     display: none;
+}
+.button-next{
+    position: absolute;
+    right: 0;
+    margin: 22px;
+    bottom: 0;
+    padding: 15px 22.5px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    background-color: var(--Marine-blue);
+    color: var(--White);
+}
+.numero-step{
+    font-family: var(--Bold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 7.5px;
+    border: 1px solid var(--Magnolia);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: var(--Magnolia);
+}
+.active-step{
+    background-color: var(--Magnolia);
+    color: var(--Marine-blue);
+}
+.button-back{
+    right: 0;
+    margin: 22px;
+    bottom: 0;
+    font-size: 18px;
+    color: var(--Cool-gray);
+}
+.confirm{
+    background-color: var(--Purplish-blue);
+}
+.cont-buttons{
+    display: flex;
+    align-items: center;
+    background-color: var(--White);
+    left: 0;
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    height: 95px;
+}
+.hidden{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .cont-main{
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+    }
 }

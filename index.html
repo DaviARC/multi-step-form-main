@@ -20,32 +20,32 @@
   <section class="container">
   <div class="slide-bar">
     <img class="slide-bar-mobile" src="assets/images/bg-sidebar-mobile.svg">
-    <img class="slide-bar-desktop" src="assets/images/bg-sidebar-mobile.svg">
-    <div class="cont-fases">
+    <nav class="cont-fases">
       <div class="cont-step">
-        <p class="numero-step">1</p>
-        <p class="fase-step">Step 1</p>
-        <p class="desc-step">Your info</p>
+        <span class="numero-step">1</span>
+        <span class="fase-step">Step 1</span>
+        <span class="desc-step">Your info</span>
       </div>
       <div class="cont-step">
-        <p class="numero-step">2</p>
-        <p class="fase-step">Step 1</p>
-        <p class="desc-step">Your info</p>
+        <span class="numero-step">2</span>
+        <span class="fase-step">Step 1</span>
+        <span class="desc-step">Your info</span>
       </div>
       <div class="cont-step">
-        <p class="numero-step">3</p>
-        <p class="fase-step">Step 1</p>
-        <p class="desc-step">Your info</p>
+        <span class="numero-step">3</span>
+        <span class="fase-step">Step 1</span>
+        <span class="desc-step">Your info</span>
       </div>
       <div class="cont-step">
-        <p class="numero-step">4</p>
-        <p class="fase-step">Step 1</p>
-        <p class="desc-step">Your info</p>
+        <span class="numero-step">4</span>
+        <span class="fase-step">Step 1</span>
+        <span class="desc-step">Your info</span>
       </div>
-    </div>
+    </nav>
   </div> 
 
   <div class="cont-main">
+    <img class="slide-bar-desktop" src="assets/images/bg-sidebar-desktop.svg">
     <div class="step1">
       <h1 class="titulo-main">Personal info</h1>
       <p class="desc-titulo">Please provide your name, email address, and phone number.</p>
@@ -57,48 +57,54 @@
       <input class="input-step-1" type="email" placeholder="e.g. stephenking@lorem.com">
       <p class="titulo-step-1">Phone Number</p>
       <input class="input-step-1" type="text" placeholder="e.g. +1 234 567 890">
-      <div class="fundo-mobile">
+      <div class="cont-buttons">
         <input class="button-next" type="submit" value="Next Step" data-button>
       </div>
       </form>
     </div>
 
     <div class="step2">
-      <div class="cont-planos">
-        <div class="cont-plano">
-          <img src="assets/images/icon-arcade.svg">
-          <div class="conta-plano_texto">
-            <p class="titulo-plano">Arcade</p>
-            <p class="preco-plano">$9/mo</p>
-            <p class="plano-desconto"></p>
+      <h1 class="titulo-main">Select your plan</h1>
+      <p class="desc-titulo">You have the option of monthly or yearly billing</p>
+        <div class="cont-box">
+          <img class="imagem-plano" src="assets/images/icon-arcade.svg">
+          <div class="flex-box">
+            <div class="conta-box_texto">
+              <span class="titulo-box">Arcade</span>
+              <span class="preco-box">$9/mo</span>
+            </div>
+            <span class="plano-desconto hidden">2 month free</span>
           </div>
         </div>
-        <div class="cont-plano">
-          <img src="assets/images/icon-advanced.svg">
-          <div class="conta-plano_texto">
-            <p class="titulo-plano">Advanced</p>
-            <p class="preco-plano">$12/mo</p>
-            <p class="plano-desconto"></p>
+        <div class="cont-box">
+          <img class="imagem-plano" src="assets/images/icon-advanced.svg">
+          <div class="flex-box">
+          <div class="conta-box_texto">
+            <span class="titulo-box">Advanced</span>
+            <span class="preco-box">$12/mo</span>
           </div>
-        </div>
-        <div class="cont-plano">
-          <img src="assets/images/icon-pro.svg">
-          <div class="conta-plano_texto">
-            <p class="titulo-plano">Pro</p>
-            <p class="preco-plano">$15/mo</p>
-            <p class="plano-desconto"></p>
+          <span class="plano-desconto hidden">2 month free</span>
           </div>
+          </div>
+        <div class="cont-box">
+          <img class="imagem-plano" src="assets/images/icon-pro.svg">
+          <div class="flex-box">
+          <div class="conta-box_texto">
+            <span class="titulo-box">Pro</span>
+            <span class="preco-box">$15/mo</span>
+          </div>
+          <span class="plano-desconto hidden">2 month free</span>
         </div>
       </div>
       <div class="cont-checkbox">
-          <p class="monthly">Monthly</p>
+          <span class="checkbox-texto monthly">Monthly</span>
           <div class="switch">
             <label class="switch-wrapper">
               <input class="checkbox" type="checkbox">
               <span class="switch-button"></span>
             </label>
           </div>
-          <p class="yearly">Yearly</p>
+          <span class="checkbox-texto yearly">Yearly</span>
       </div>
       <div class="cont-buttons">
         <div class="button-back">Go Back</div>
@@ -111,79 +117,88 @@
       <p class="desc-titulo">Add-ons help enhance your gaming experience.</p>
 
       <div class="cont-add-ons">
-          <div class="add-ons-box">
-            <div class="flex-ons">
-              <input type="checkbox" class="checkbox-ons">
-              <div class="texto-ons">
-                <p class="titulo-ons">Online service</p>
-                <p class="p-ons">Access to multiplayer games</p>
-              </div>
+          <div class="cont-box align-item">
+            <label>
+              <input type="checkbox" class="checkbox-ons-input">
+              <div class="checkbox-ons"></div>
+            </label>
+              <div class="conta-box_texto ons">
+                <p class="titulo-box">Online service</p>
+                <p class="desc-ons">Access to multiplayer games</p>
             </div>
             <div class="preco-ons">
               +$1/mo
             </div>
           </div>
-          <div class="add-ons-box">
-            <div class="flex-ons">
-              <input type="checkbox" class="checkbox-ons">
-              <div class="texto-ons">
-                <p class="titulo-ons">Larger storage</p>
-                <p class="p-ons">Extra 1TB of cloud save</p>
+          <div class="cont-box align-item">
+            <label>
+              <input type="checkbox" class="checkbox-ons-input">
+              <div class="checkbox-ons"></div>
+            </label>
+            <div class="conta-box_texto ons">
+              <p class="titulo-box">Larger storage</p>
+              <p class="desc-ons">Extra 1TB of cloud save</p>
+          </div>
+          <div class="preco-ons">
+            +$2/mo
+          </div>
+        </div>
+            <div class="cont-box align-item">
+              <label>
+                <input type="checkbox" class="checkbox-ons-input">
+                <div class="checkbox-ons"></div>
+              </label>
+              <div class="conta-box_texto ons">
+                <p class="titulo-box">Customizable Profile</p>
+                <p class="desc-ons">Custom theme on your profile</p>
               </div>
-            </div>
+            
             <div class="preco-ons">
               +$2/mo
             </div>
           </div>
-          <div class="add-ons-box">
-            <div class="flex-ons">
-              <input type="checkbox" class="checkbox-ons">
-              <div class="texto-ons">
-                <p class="titulo-ons">Customizable Profile</p>
-                <p class="p-ons">Custom theme on your profile</p>
-              </div>
+          </div>
+          <div class="cont-buttons">
+            <div class="button-back">Go Back</div>
+            <div class="button-next">Next Step</div>
+          </div>
+      </div> 
+      <div class="step4">
+        <h1 class="titulo-main">Finishing up</h1>
+        <p class="desc-titulo">Double-check everything looks OK before confirming.</p>
+        <div class="cont-resultado">
+          <div class="cont-prin-resultado">
+            <div class="texto-resultado">
+              <p class="titulo-resultado">Arcade(Monthly)</p>
+              <p class="p-resultado tracado">Change</p>
             </div>
-            <div class="preco-ons">
-              +$2/mo
-            </div>
+            <p class="preco-resultado-mes">$9/mo</p>
           </div>
-      </div>
-      <div class="cont-buttons">
-        <div class="button-back">Go Back</div>
-        <div class="button-next">Next Step</div>
-      </div>
-    </div>
-
-    <div class="step4">
-      <h1 class="titulo-main">Finishing up</h1>
-      <p class="desc-titulo">Double-check everything looks OK before confirming.</p>
-      <div class="cont-resultado">
-        <div class="cont-prin-resultado">
-          <div class="texto-resultado">
-            <p class="titulo-resultado">Arcade(Monthly)</p>
-            <p class="p-resultado tracado">Change</p>
+          <span class="linha"></span>
+          <div class="resultado-flex">
+            <p class="p-resultado">Online service</p>
+            <p class="preco-resultado">$1/mo</p>
           </div>
-          <div class="preco-resultado-mes">
-            <p>$9/mo</p>
+          <div class="resultado-flex">
+            <p class="p-resultado">Online service</p>
+            <p class="preco-resultado">$1/mo</p>
           </div>
         </div>
-        <span class="linha"></span>
-        <div class="resultado-flex">
-          <p class="p-resultado">Online service</p>
-          <p class="preco-resultado">$1/mo</p>
+        <div class="total-resultado">
+          <p class="total-resultado-p">Total (per month/year)</p>
+          <p class="total-resultado-preco">$1/mo</p>
         </div>
-        <div class="resultado-flex">
-          <p class="p-resultado"></p>
-          <p class="preco-resultado"></p>
+        <div class="cont-buttons">
+          <div class="button-back">Go Back</div>
+          <div class="button-next confirm">Confirm</div>
         </div>
       </div>
-      <div class="total-resultado">
-        <p class="total-resultado-p">Total (per month/year)</p>
-        <p class="total-resultado-preco">$1/mo</p>
-      </div>
-      <div class="cont-buttons">
-        <div class="button-back">Go Back</div>
-        <div class="button-next">Next Step</div>
+      <div class="agradecimento">
+        <div class="cont-agrad">
+          <img class="img-thank" src="assets/images/icon-thank-you.svg">
+          <h1 class="titulo-main">Thank you!</h1>
+          <p class="desc-titulo">Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support&loremgaming.com.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -201,9 +216,9 @@
   <!-- Step 5 end -->
   </section>
   
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
 </html>

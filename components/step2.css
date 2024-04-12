@@ -1,0 +1,13 @@
+.imagem-plano{
+    padding: 18px;
+    width: 50px;    
+}
+.plano-desconto{
+    color: var(--Marine-blue);
+    margin: 10px 0 20px 0 ;
+    font-size: 14px;
+}
+.plano-active{
+    background-color: var(--Magnolia);
+    border: 1px solid var(--Purplish-blue);
+}

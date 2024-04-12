@@ -1,11 +1,13 @@
 .cont-checkbox{
     position: relative;
     width: 100%;
-    background-color: var(--Light-gray);
+    background-color: var(--Magnolia);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    padding: 8px 0;
+    border-radius: 10px;
 }
 
 .checkbox{
@@ -42,5 +44,10 @@
 }
 .checkbox:checked + .switch-button{
     left: 30px;
-   
+}
+.checkbox-texto{
+    font-size: 12px;
+}
+.active-checkbox{
+    color: var(--Marine-blue);
 }

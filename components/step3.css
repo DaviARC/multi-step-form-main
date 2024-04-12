@@ -1,0 +1,38 @@
+.align-item{
+    align-items: center;
+    justify-content: space-between;
+}
+.checkbox-ons, .preco-ons{
+    margin: 18px;
+}
+.checkbox-ons{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--Cool-gray);
+    border-radius: 4px;
+}
+label{
+    position: relative;
+}
+.checkbox-ons-input:checked ~ .checkbox-ons{
+    background-image: url("../assets/images/icon-checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--Purplish-blue);
+ }
+.checkbox-ons-input{
+    display: none;
+}
+.preco-ons{
+    font-size: 14px;
+    color: var(--Purplish-blue);
+}
+.desc-ons{
+    font-size: 14px;
+    color: var(--Cool-gray);
+}
+.ons{
+    margin: 15px 0;
+    gap: 6px;
+    width: 100%;
+}

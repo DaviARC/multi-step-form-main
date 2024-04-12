@@ -1,0 +1,25 @@
+.cont-box{
+    width: 100%;
+    border: 1px solid var(--Cool-gray);
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.titulo-box{
+    font-size: 18px;
+    color: var(--Marine-blue);
+    font-family: 'Ubuntu-Bold';
+}
+.conta-box_texto{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.flex-box{
+    display: flex;
+    flex-direction: column;
+}
+.preco-box{
+    color: var(--Cool-gray);
+}
