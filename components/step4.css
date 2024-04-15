@@ -53,3 +53,9 @@
     font-family: var(--Bold);
     font-size: 20px;
 }
+
+@media screen and (min-width:1024px) {
+    .cont-resultado{
+        width: 90%;
+    }
+}

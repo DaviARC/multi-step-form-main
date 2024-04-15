@@ -23,3 +23,8 @@
 .preco-box{
     color: var(--Cool-gray);
 }
+@media screen and (min-width:1024px){
+    .cont-box{
+        height: 100%;
+    }
+}

@@ -4,7 +4,8 @@
 @import url(components/step2.css);
 @import url(components/step3.css);
 @import url(components/step4.css);
-@import url(components/agrad.css);
+@import url(components/step5.css);
+@import url(components/nav-step.css);
 @import url(reset.css);
 
 @font-face {
@@ -42,28 +43,32 @@ body, html{
     height: 100%;
 }
 body{
-    position: relative;
     background-color: var(--Magnolia);
     font-family: var(--Regular);
     box-sizing: border-box;
 }  
+.hidden{
+    display: none;
+}
+.cont-centro{
+    width: 100%;
+}
 .container{
     display: flex;
     flex-direction: column;
-    align-items: center;   
-}
-.fase-step, .desc-step{
-    display: none;
+    align-items: center; 
 }
 .cont-main{
     border-radius: 10px;
-    width: 340px;
+    width: 320px;
     background-color: var(--White);
-    margin-top: -75px;
     padding: 20px 20px;
-    box-sizing: border-box;
+    margin: -75px auto 0 auto;
 }
-.step2, .step3, .step4, .agradecimento{
+.cont-absolute{
+    height: 200px;
+}
+.step4, .step3, .step2, .step5{
     display: none;
 }
 .button-next{
@@ -77,29 +82,16 @@ body{
     border: none;
     background-color: var(--Marine-blue);
     color: var(--White);
+    cursor: pointer;
 }
-.numero-step{
-    font-family: var(--Bold);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 7.5px;
-    border: 1px solid var(--Magnolia);
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    color: var(--Magnolia);
-}
-.active-step{
-    background-color: var(--Magnolia);
-    color: var(--Marine-blue);
-}
+
 .button-back{
     right: 0;
     margin: 22px;
     bottom: 0;
     font-size: 18px;
     color: var(--Cool-gray);
+    cursor: pointer;
 }
 .confirm{
     background-color: var(--Purplish-blue);
@@ -119,9 +111,39 @@ body{
     display: none;
 }
 @media screen and (min-width: 1024px) {
+    .step1,.step2, .step3, .step4, .step5{
+        padding: 0 80px;
+        width: 500px;
+        position: relative;
+    }
     .cont-main{
+        width: 320px;
         display: flex;
-        width: 80%;
+        width: 100%;
         justify-content: space-between;
+        background-color: transparent;
+        margin: 0;
+        padding: 0;
+    }
+    .container-desktop{
+        border-radius: 10px;
+        background-color: var(--White);
+        padding: 20px 20px;
+        display: flex;
+    }
+    .cont-centro{
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .cont-buttons{
+        left: 80px;
+        width: 500px;
+        position: absolute;
+    }
+    .button-next{
+        margin: 0 0 22px 0;
     }
 }

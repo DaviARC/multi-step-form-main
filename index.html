@@ -14,88 +14,108 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script src="index.js" defer type="module"></script>
 </head>
 <body>
   <!-- Sidebar start -->
-  <section class="container">
+  <div class="cont-centro">
+  <section class="container-desktop">
   <div class="slide-bar">
     <img class="slide-bar-mobile" src="assets/images/bg-sidebar-mobile.svg">
+    <img class="slide-bar-desktop" src="assets/images/bg-sidebar-desktop.svg">
     <nav class="cont-fases">
       <div class="cont-step">
-        <span class="numero-step">1</span>
-        <span class="fase-step">Step 1</span>
-        <span class="desc-step">Your info</span>
+        <span class="numero-step active-step">1</span>
+        <div>
+          <span class="fase-step">STEP 1</span>
+          <span class="desc-step">YOUR INFO</span>
+        </div>
       </div>
       <div class="cont-step">
         <span class="numero-step">2</span>
-        <span class="fase-step">Step 1</span>
-        <span class="desc-step">Your info</span>
+        <div>
+          <span class="fase-step">STEP 2</span>
+          <span class="desc-step">SELECT PLAN</span>
+        </div>
       </div>
       <div class="cont-step">
         <span class="numero-step">3</span>
-        <span class="fase-step">Step 1</span>
-        <span class="desc-step">Your info</span>
+        <div>
+          <span class="fase-step">STEP 3</span>
+          <span class="desc-step">ADD-ONS</span>
+        </div>
       </div>
       <div class="cont-step">
         <span class="numero-step">4</span>
-        <span class="fase-step">Step 1</span>
-        <span class="desc-step">Your info</span>
+        <div>
+          <span class="fase-step">STEP 4</span>
+          <span class="desc-step">SUMMARY</span>
+        </div>
       </div>
     </nav>
   </div> 
-
   <div class="cont-main">
-    <img class="slide-bar-desktop" src="assets/images/bg-sidebar-desktop.svg">
-    <div class="step1">
+    <div class="step1 step">
       <h1 class="titulo-main">Personal info</h1>
       <p class="desc-titulo">Please provide your name, email address, and phone number.</p>
       
       <form>
-      <p class="titulo-step-1">Name</p>
-      <input class="input-step-1" type="text" placeholder="e.g. Stephen King">
-      <p class="titulo-step-1">Email Address</p>
-      <input class="input-step-1" type="email" placeholder="e.g. stephenking@lorem.com">
-      <p class="titulo-step-1">Phone Number</p>
-      <input class="input-step-1" type="text" placeholder="e.g. +1 234 567 890">
+      <div class="cont-input">
+        <p class="titulo-step-1">Name</p>
+        <p class="mensagem-erro"></p>
+      </div>
+      <input class="input-step-1" type="text" placeholder="e.g. Stephen King" required>
+      <div class="cont-input">
+        <p class="titulo-step-1">Email</p>
+        <p class="mensagem-erro"></p>
+      </div>
+      <input class="input-step-1" type="email" placeholder="e.g. stephenking@lorem.com" required>
+      <div class="cont-input">
+        <p class="titulo-step-1">Phone Number</p>
+        <p class="mensagem-erro"></p>
+      </div>
+      <input class="input-step-1" type="text" placeholder="e.g. +1 234 567 890" required>
       <div class="cont-buttons">
         <input class="button-next" type="submit" value="Next Step" data-button>
       </div>
       </form>
     </div>
 
-    <div class="step2">
+    <div class="step2 step">
       <h1 class="titulo-main">Select your plan</h1>
       <p class="desc-titulo">You have the option of monthly or yearly billing</p>
-        <div class="cont-box">
+      <div class="cont-box-desktop">
+        <div class="cont-box plan-box">
           <img class="imagem-plano" src="assets/images/icon-arcade.svg">
           <div class="flex-box">
-            <div class="conta-box_texto">
+            <div class="conta-box_texto texto-plan">
               <span class="titulo-box">Arcade</span>
               <span class="preco-box">$9/mo</span>
             </div>
             <span class="plano-desconto hidden">2 month free</span>
           </div>
         </div>
-        <div class="cont-box">
+        <div class="cont-box plan-box">
           <img class="imagem-plano" src="assets/images/icon-advanced.svg">
           <div class="flex-box">
-          <div class="conta-box_texto">
+          <div class="conta-box_texto texto-plan">
             <span class="titulo-box">Advanced</span>
             <span class="preco-box">$12/mo</span>
           </div>
           <span class="plano-desconto hidden">2 month free</span>
           </div>
           </div>
-        <div class="cont-box">
+        <div class="cont-box plan-box">
           <img class="imagem-plano" src="assets/images/icon-pro.svg">
           <div class="flex-box">
-          <div class="conta-box_texto">
+          <div class="conta-box_texto texto-plan">
             <span class="titulo-box">Pro</span>
             <span class="preco-box">$15/mo</span>
           </div>
           <span class="plano-desconto hidden">2 month free</span>
         </div>
       </div>
+    </div>
       <div class="cont-checkbox">
           <span class="checkbox-texto monthly">Monthly</span>
           <div class="switch">
@@ -112,7 +132,7 @@
       </div>
     </div>
 
-    <div class="step3">
+    <div class="step3 step">
       <h1 class="titulo-main">Pick add-ons</h1>
       <p class="desc-titulo">Add-ons help enhance your gaming experience.</p>
 
@@ -163,7 +183,7 @@
             <div class="button-next">Next Step</div>
           </div>
       </div> 
-      <div class="step4">
+      <div class="step4 step">
         <h1 class="titulo-main">Finishing up</h1>
         <p class="desc-titulo">Double-check everything looks OK before confirming.</p>
         <div class="cont-resultado">
@@ -193,7 +213,7 @@
           <div class="button-next confirm">Confirm</div>
         </div>
       </div>
-      <div class="agradecimento">
+      <div class="step5 step">
         <div class="cont-agrad">
           <img class="img-thank" src="assets/images/icon-thank-you.svg">
           <h1 class="titulo-main">Thank you!</h1>
@@ -201,6 +221,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 
 

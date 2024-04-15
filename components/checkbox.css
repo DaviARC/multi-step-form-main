@@ -9,7 +9,6 @@
     padding: 8px 0;
     border-radius: 10px;
 }
-
 .checkbox{
     display: none;
 }
@@ -50,4 +49,10 @@
 }
 .active-checkbox{
     color: var(--Marine-blue);
+}
+
+@media screen and (min-width: 1024px){
+    .cont-box{
+        height: 80px;
+    }
 }

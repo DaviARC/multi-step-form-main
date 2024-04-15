@@ -11,3 +11,18 @@
     background-color: var(--Magnolia);
     border: 1px solid var(--Purplish-blue);
 }
+
+@media screen and (min-width:1024px) {
+    .cont-box-desktop{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    .plan-box{
+        width: 30%;
+        flex-direction: column;
+    }
+    .texto-plan{
+        padding: 18px;
+    }
+}
