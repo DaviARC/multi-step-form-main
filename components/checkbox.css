@@ -8,11 +8,14 @@
     gap: 10px;
     padding: 8px 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 .checkbox{
     display: none;
 }
-
+.cont-box{
+    cursor: pointer;
+}
 .switch, .switch-wrapper{
     width: 60px;
     height: 34px;

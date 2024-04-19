@@ -64,17 +64,17 @@
         <p class="titulo-step-1">Name</p>
         <p class="mensagem-erro"></p>
       </div>
-      <input class="input-step-1" type="text" placeholder="e.g. Stephen King" required>
+      <input class="input-step-1" name="nome" type="text" placeholder="e.g. Stephen King" required>
       <div class="cont-input">
         <p class="titulo-step-1">Email</p>
         <p class="mensagem-erro"></p>
       </div>
-      <input class="input-step-1" type="email" placeholder="e.g. stephenking@lorem.com" required>
+      <input class="input-step-1" name="email" type="email" placeholder="e.g. stephenking@lorem.com" required>
       <div class="cont-input">
         <p class="titulo-step-1">Phone Number</p>
         <p class="mensagem-erro"></p>
       </div>
-      <input class="input-step-1" type="text" placeholder="e.g. +1 234 567 890" required>
+      <input class="input-step-1" name="numero" type="text" placeholder="e.g. +1 234 567 890" required>
       <div class="cont-buttons">
         <input class="button-next" type="submit" value="Next Step" data-button>
       </div>
@@ -85,42 +85,57 @@
       <h1 class="titulo-main">Select your plan</h1>
       <p class="desc-titulo">You have the option of monthly or yearly billing</p>
       <div class="cont-box-desktop">
-        <div class="cont-box plan-box">
+        <label>
+          <input class="checkbox-plan" type="checkbox">
+        <div class="cont-box plan-box arcade">
           <img class="imagem-plano" src="assets/images/icon-arcade.svg">
           <div class="flex-box">
-            <div class="conta-box_texto texto-plan">
+            <div class="flex-box-desktop">
+            <div class="conta-box_texto texto-plan ">
               <span class="titulo-box">Arcade</span>
               <span class="preco-box">$9/mo</span>
             </div>
             <span class="plano-desconto hidden">2 month free</span>
           </div>
         </div>
-        <div class="cont-box plan-box">
+        </div>
+        </label>
+        <label>
+          <input class="checkbox-plan" type="checkbox">
+        <div class="cont-box plan-box advanced">
           <img class="imagem-plano" src="assets/images/icon-advanced.svg">
           <div class="flex-box">
-          <div class="conta-box_texto texto-plan">
+            <div class="flex-box-desktop">
+          <div class="conta-box_texto texto-plan ">
             <span class="titulo-box">Advanced</span>
             <span class="preco-box">$12/mo</span>
           </div>
           <span class="plano-desconto hidden">2 month free</span>
           </div>
           </div>
-        <div class="cont-box plan-box">
+        </div>
+        </label>
+        <label>
+          <input class="checkbox-plan" type="checkbox">
+        <div class="cont-box plan-box pro">
           <img class="imagem-plano" src="assets/images/icon-pro.svg">
           <div class="flex-box">
-          <div class="conta-box_texto texto-plan">
-            <span class="titulo-box">Pro</span>
-            <span class="preco-box">$15/mo</span>
-          </div>
-          <span class="plano-desconto hidden">2 month free</span>
+          <div class="flex-box-desktop">
+            <div class="conta-box_texto texto-plan ">
+              <span class="titulo-box">Pro</span>
+              <span class="preco-box">$15/mo</span>
+            </div>
+              <span class="plano-desconto hidden">2 month free</span>
+            </div>
         </div>
       </div>
+        </label>
     </div>
       <div class="cont-checkbox">
           <span class="checkbox-texto monthly">Monthly</span>
           <div class="switch">
             <label class="switch-wrapper">
-              <input class="checkbox" type="checkbox">
+              <input class="checkbox checkbox-step2" type="checkbox">
               <span class="switch-button"></span>
             </label>
           </div>
@@ -146,8 +161,8 @@
                 <p class="titulo-box">Online service</p>
                 <p class="desc-ons">Access to multiplayer games</p>
             </div>
-            <div class="preco-ons">
-              +$1/mo
+            <div>
+              <div class="preco-ons">+$1/mo</div>
             </div>
           </div>
           <div class="cont-box align-item">
@@ -159,8 +174,10 @@
               <p class="titulo-box">Larger storage</p>
               <p class="desc-ons">Extra 1TB of cloud save</p>
           </div>
-          <div class="preco-ons">
-            +$2/mo
+          <div>
+            <div class="preco-ons">
+              +$2/mo
+            </div>
           </div>
         </div>
             <div class="cont-box align-item">
@@ -172,9 +189,10 @@
                 <p class="titulo-box">Customizable Profile</p>
                 <p class="desc-ons">Custom theme on your profile</p>
               </div>
-            
-            <div class="preco-ons">
-              +$2/mo
+            <div>
+              <div class="preco-ons">
+                +$2/mo
+              </div>
             </div>
           </div>
           </div>
@@ -195,14 +213,8 @@
             <p class="preco-resultado-mes">$9/mo</p>
           </div>
           <span class="linha"></span>
-          <div class="resultado-flex">
-            <p class="p-resultado">Online service</p>
-            <p class="preco-resultado">$1/mo</p>
-          </div>
-          <div class="resultado-flex">
-            <p class="p-resultado">Online service</p>
-            <p class="preco-resultado">$1/mo</p>
-          </div>
+
+          <div id="plan"></div>
         </div>
         <div class="total-resultado">
           <p class="total-resultado-p">Total (per month/year)</p>

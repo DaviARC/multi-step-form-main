@@ -6,12 +6,15 @@
     color: var(--Marine-blue);
     margin: 10px 0 20px 0 ;
     font-size: 14px;
+    display: block;
 }
 .plano-active{
     background-color: var(--Magnolia);
     border: 1px solid var(--Purplish-blue);
 }
-
+.checkbox-plan{
+    display: none;
+}
 @media screen and (min-width:1024px) {
     .cont-box-desktop{
         display: flex;
@@ -19,10 +22,14 @@
         position: relative;
     }
     .plan-box{
-        width: 30%;
+        width: 152px;
+        height: auto;
+        padding-bottom: 10px;
         flex-direction: column;
     }
-    .texto-plan{
-        padding: 18px;
+    .flex-box-desktop{
+        display: flex;
+        padding-left: 18px;
+        flex-direction: column;
     }
 }
